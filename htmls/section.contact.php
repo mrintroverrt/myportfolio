@@ -1,8 +1,8 @@
 <?php if(true): ?>
 <section class="contact" id="contact">
         <h2 class="heading">CONTACT<span>ME</span></h2>
-
-        <form action="#" method="post">
+        <link rel="stylesheet" href="/JS/mail.js">
+        <form action="mailto:prasaanth2k@gmail.com" method="post">
             <div class="input-box">
                 <div class="input-field">
                     <input type="text" placeholder="FULLNAME" required>
@@ -36,4 +36,4 @@
             </div>
         </form>
     </section>
-<?php endif; ?>
+<?php endif;?>
