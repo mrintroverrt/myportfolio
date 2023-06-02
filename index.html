@@ -8,15 +8,14 @@
     <meta name="description" content="portfolio_page">
     <meta name="author" content="Prasaanth">
     <link rel="icon" type="image/svg+xml" href="/images/rounde_images.png">
-    <title>Prasaanth Sakthivel | Web developer </title>
+    <title>Prasaanth Sakthivel | Full Stack developer </title>
     <link rel="stylesheet" href="/css/mainpage.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/skill.css">
     <link rel="stylesheet" href="/css/project.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect -
-        Flaticon</a>
 </head>
 
 <body>
@@ -37,19 +36,12 @@
         <div class="home-content">
             <h1>Hi, I'm <span>Prasaanth Sakthivel.</span></h1>
             <div class="text-animation">
-                <h3>Full Stack Dev</h3>
+                <h3 id="typing-text">Full Stack Dev</h3>
             </div>
             <p>
                 As a proficient full-stack 💻 web developer with knowledge of Python 🐍, Java ☕️, C ☢️, HTML 🌐, CSS 🎨,
                 and JavaScript 🖥️, my name is Prasaanth.✨ I've received thorough instruction in becoming a full-stack
-                web engineer from my mentor,
-                <span class="tooltip">
-                    Sibidharan
-                    <span class="tooltiptext">
-                        <img src="/images/sibianna.png" alt="Mentor" width="110" height="110">
-                        Founder and Director of , Selfmade Ninja Academy
-                    </span>
-                </span> I have a firm grasp of networking
+                web engineer from my mentor, Sibidharan I have a firm grasp of networking
                 fundamentals 🔗, CLI
                 programmes ⌨️, and Docker 🐳. I am able to easily acclimatise to new technologies. Additionally, I am
                 capable of managing entire projects on my own. pls add more emojies to this text respective words
@@ -76,7 +68,12 @@
             <h3>Full Stack Developer!</h3>
             <p>As a proficient full-stack 💻 web developer with knowledge of Python 🐍, Java ☕️, C ☢️, HTML 🌐, CSS 🎨,
                 and JavaScript 🖥️, my name is Prasaanth.✨ I've received thorough instruction in becoming a full-stack
-                web engineer from my mentor, Sibidharan. I have a firm grasp of networking fundamentals 🔗, CLI
+                web engineer from my mentor, <a href="https://sibidharan.me/"><span class="tooltip">Sibidharan
+                        <span class="tooltiptext">
+                            <img src="/images/sibianna.png" alt="Mentor" width="110" height="110">
+                            Founder and Director of , Selfmade Ninja Academy
+                        </span>
+                    </span></a> . I have a firm grasp of networking fundamentals 🔗, CLI
                 programmes ⌨️, and Docker 🐳. I am able to easily acclimatise to new technologies. Additionally, I am
                 capable of managing entire projects on my own. pls add more emojies to this text respective words
             </p>
@@ -329,15 +326,28 @@
                 </div>
             </div>
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="YOUR MESSAGE" required></textarea>
+                <textarea id="" cols="30" rows="10" placeholder="YOUR MESSAGE" required></textarea>
                 <span class="focus"></span>
             </div>
 
             <div class="btn-box">
-                <button type="sumit" class="btn">SUMIT</button>
+                <div class="contactsubmit">
+                    <button type="sumit" class="btn">SUMIT</button>
+                </div>
             </div>
         </form>
     </section>
+    <!-- footer-design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>COPYRIGHTS &copy; 2023 By Prasaanth Sakthivel | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css-Flaticon</a>
+            <a href="#"><i class='bx bxs-caret-up-circle'></i></a>
+        </div>
+    </footer>
+    <script src="/JS/typing.js"></script>
 </body>
 
 </html>

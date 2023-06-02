@@ -14,7 +14,7 @@
     --bg-color: #000000;
     --second-bg-color: #000000;
     --text-bg-color: #ffffff;
-    --main-bg-color: #06a1df;
+    --main-bg-color: #630094;
 }
 
 html {
@@ -95,7 +95,7 @@ section{
     font-size: 3.3rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px var(--main-bg-color);
+    -webkit-text-fill-color: white
 }
 
 .home-content p{
