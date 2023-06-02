@@ -1,0 +1,16 @@
+.projects-box h2 {
+    font-size: 3.2rem;
+    color: var(--main-bg-color);
+}
+
+.projects-box p,p1{
+    font-size: 2.1rem;
+}
+.project-source{
+    margin-top: 25px;
+    font-size: 5rem;
+}
+.snawgconnect{
+    font-size: 5rem;
+    color: beige;
+}

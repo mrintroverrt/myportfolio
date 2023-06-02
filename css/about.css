@@ -1,0 +1,188 @@
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.about-img{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .5rem solid var(--main-bg-color);
+    transition: .9s;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #302f2f;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+span{
+    color: var(--main-bg-color);
+}
+
+.about-img .cicrle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--second-bg-color);
+    border-bottom: .2rem solid var(--second-bg-color);
+    border-left: .2rem solid var(--main-bg-color);
+    border-right: .2rem solid var(--main-bg-color);
+
+}
+.about-content{
+    text-align: center;
+}
+.about-content h3{
+    font-size: 2.6rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem 0 3rem;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  border-radius: 14px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  border: #302f2f solid .2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 2s;
+  backdrop-filter: blur(16px);
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.education{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(/images/plain_backgroud.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+    padding-bottom: 5rem;
+    z-index: 1;
+}
+
+.education .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education .education-column{
+    flex: 1 1 40rem;
+}
+
+.education-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+.education-column .education-box {
+    border-left: .5rem solid var(--main-bg-color);
+}
+
+
+.education-box .education-content{
+    position: relative;
+    padding: 2rem;
+}
+.education-box .education-content::before{
+    content: '';
+    position: absolute;
+    left: -1.3rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-bg-color);
+    border-radius: 50%;
+}
+.education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    /* border: .2rem solid var(--main-bg-color); */
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.education-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(90, 14, 167);
+    z-index: -1;
+    transition: .9s;
+}
+.education-content .content:hover:before{
+    width: 100%;
+}
+.education-content .content .year {
+    font-size: 1.5rem;
+    color: var(--main-bg-color);
+    padding-bottom: .5rem;
+}
+.education-content .content .year i {
+    padding-right: .5rem;
+}
+.education-content .content h3 {
+    font-size: 2rem;
+}
+
+.education-content .content p {
+    font-size: 1.6rem;
+    padding-top: .5rem;
+}
+.JavaScriptimg{
+    border-radius: 4px;
+}

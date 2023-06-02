@@ -1,0 +1,101 @@
+.skills{
+    min-height: auto;
+    padding-bottom: 7rem;
+    /* background-image: url(/images/plain_backgroud.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.devops {
+    filter: brightness(0) invert(1);
+    /* Add other styles as needed */
+  }
+.skills .skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}  
+.skills-row .skills-colomn{
+    flex: 1 1 60rem;
+}
+.skills-colomn .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+.skills-box .skills-content{
+    position: relative;
+    /* border: .6rem solid var(--main-bg-color); */
+    border-radius: .6rem;
+    padding: .5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.skills-box .skills-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+}
+.skills-content .progress{
+    padding: 1rem 0;
+}
+.skills-content .progress h3{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-content .progress h3 span{
+    color: var(--main-bg-color);
+}
+.skills-content .progress .bar {
+    height: 1.1rem;
+    border-radius: 18rem;
+    /* border: .2rem solid var(--main-bg-color); */
+    padding: .2rem;
+    margin: 1rem 0;
+}
+.skills-content .progress .bar  span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-bg-color);
+}
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(1) .bar span,
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(2) .bar span,
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(3) .bar span,
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(4) .bar span,
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(5) .bar span,
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+  width: 45%;
+}
+
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(1) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(2) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(3) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(4) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(5) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(6) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(7) .bar span {
+  width: 45%;
+}
+
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(1) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
+  width: 70%;
+}
+
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(2) .bar span,
+.skills-colomn:nth-child(1) .skills-content .progress:nth-child(3) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(2) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(4) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(5) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(6) .bar span,
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(7) .bar span {
+  width: 45%;
+}
+
+.skills-colomn:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+  width: 30%;
+}
