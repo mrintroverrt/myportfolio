@@ -12,6 +12,13 @@
     font-size: 13px;
     padding-left: 25px;
 }
+@media (max-width: 767px) {
+  .footer-text{
+    font-size: 13px;
+    padding-left: 25px;
+    font-size: 12px;
+}
+}
 .footer-iconTop i {
     position: relative;
     display: inline-flex;
@@ -24,6 +31,12 @@
     display: inline-block;
     color: white;
   }
+
+@media (max-width: 767px) {
+  .footer-iconTop i{
+    padding-left: 250px;
+  }
+}
   #typing-text {
     display: inline-block !important;
     vertical-align: middle !important;

@@ -26,6 +26,9 @@
     min-height: auto;
     padding-bottom: 7rem;
 }
+.contact h2{
+    font-family: 'IBM Plex Mono';
+}
 .contact form {
     max-width: 70rem;
     margin: 0 auto;

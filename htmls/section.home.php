@@ -3,7 +3,11 @@
     <div class="home-content">
         <h1>Hi, I'm <span>Prasaanth Sakthivel.</span></h1>
         <div class="text-animation">
-            <h3 id="typing-text">Full Stack Dev</h3>
+        <p id="sliding-text-container">
+  <span id="sliding-text"></span>
+  <span id="sliding-text-clone"></span>
+</p>
+
         </div>
         <p>
             As a proficient full-stack 💻 web developer with knowledge of Python 🐍, Java ☕️, C ☢️, HTML 🌐, CSS 🎨,
@@ -15,7 +19,7 @@
         </p>
         <div class="btn-box">
             <a href="#" class="btn">Hire me</a>
-            <a href="#" class="btn">Let's Talk</a>
+            <a href="skype:https://join.skype.com/invite/re0czJ0w8hNb" class="btn" target="_blank">Let's Talk</a>
         </div>
     </div>
     <div class="home-sci">

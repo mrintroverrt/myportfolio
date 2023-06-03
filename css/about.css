@@ -169,7 +169,7 @@ span{
 }
 .education-content .content .year {
     font-size: 1.5rem;
-    color: var(--main-bg-color);
+    color: var(--text-bg-color);
     padding-bottom: .5rem;
 }
 .education-content .content .year i {

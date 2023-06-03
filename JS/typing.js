@@ -1,36 +1,42 @@
-const skills = ["Full Stack Web Development", "API Programing", "CLI Building", "Socket Programing","DevOps","JQuery"]; // Add your skills here
-let currentSkillIndex = 0;
-let currentText = "";
-let isDeleting = false;
-let typingDelay = 250; // Delay between each character typing
-let deletingDelay = 250; // Delay after typing complete before deleting
+const skills = [
+  "Full Stack Web Development",
+  "API Programming",
+  "CLI Building",
+  "Socket Programming",
+  "DevOps",
+  "JQuery",
+  "Appium Mobile Testing",
+  "Selenium Automation",
+  "API Testing",
+]; // Add your skills here
 
-function typeSkillText() {
-  const skill = skills[currentSkillIndex];
-  if (isDeleting) {
-    currentText = skill.substring(0, currentText.length - 1);
-  } else {
-    currentText = skill.substring(0, currentText.length + 1);
-  }
-  document.getElementById("typing-text").textContent = currentText;
+const slidingText = document.getElementById("sliding-text");
+const slidingTextClone = document.getElementById("sliding-text-clone");
 
-  let delay = typingDelay;
-  if (isDeleting) {
-    delay /= 2;
-  }
+function createSlidingText() {
+  let text = "";
 
-  if (!isDeleting && currentText === skill) {
-    delay = deletingDelay;
-    isDeleting = true;
-  } else if (isDeleting && currentText === "") {
-    isDeleting = false;
-    currentSkillIndex++;
-    if (currentSkillIndex === skills.length) {
-      currentSkillIndex = 0;
-    }
-  }
+  // Concatenate the skills array into a single string
+  skills.forEach((skill, index) => {
+    text += index !== skills.length - 1 ? skill + " | " : skill;
+  });
 
-  setTimeout(typeSkillText, delay);
+  slidingText.textContent = text;
+  slidingTextClone.textContent = text;
 }
 
-typeSkillText();
+createSlidingText();
+
+document.getElementById("redirect-button").addEventListener("click", function() {
+  window.location.href = "#home";
+});
+window.onload = function() {
+  // When all resources are loaded, hide the loader
+  document.getElementById("onloading").style.display = "none";
+};
+
+if (/Mobi/.test(navigator.userAgent)) {
+  // If the user is on a mobile device
+  var containerWrapper = document.getElementById('container-wrapper');
+  containerWrapper.parentNode.removeChild(containerWrapper);
+}
